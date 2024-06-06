@@ -24,27 +24,31 @@ async function checkWeather(city) {
 
       switch (data.weather[0].main) {
         case "Clouds":
-          weatherIcon.src = "image/cloudy-weather.png";
-          document.body.style.backgroundImage = "url('image/cloudy-background.jpg')";
+          weatherIcon.src = "images/cloudy-weather.png";
+          document.body.style.backgroundImage = "url('images/cloudy-background.jpg')";
           break;
         case "Clear":
-          weatherIcon.src = "image/clear-weather.png";
-          document.body.style.backgroundImage = "url('image/clear-background.jpg')";
+          weatherIcon.src = "images/clear-weather.png";
+          document.body.style.backgroundImage = "url('images/clear-background.jpg')";
           break;
         case "Rain":
-          weatherIcon.src = "image/rainy-weather.png";
-          document.body.style.backgroundImage = "url('image/rainy-background.jpg')";
+          weatherIcon.src = "images/rainy-weather.png";
+          document.body.style.backgroundImage = "url('images/rainy-background.jpg')";
           break;
         case "Drizzle":
-          weatherIcon.src = "image/drizzle-weather.png";
-          document.body.style.backgroundImage = "url('image/drizzle-background.jpg')";
+          weatherIcon.src = "images/drizzle-weather.png";
+          document.body.style.backgroundImage = "url('images/drizzle-background.jpg')";
           break;
         case "Mist":
-          weatherIcon.src = "image/mist-weather.png";
-          document.body.style.backgroundImage = "url('image/mist-background.jpg')";
+          weatherIcon.src = "images/mist-weather.png";
+          document.body.style.backgroundImage = "url('images/mist-background.jpg')";
+          break;
+        case "Dust":
+          weatherIcon.src = "images/dust.png";
+          document.body.style.backgroundImage = "url('images/dust-bg.jpg')";
           break;
         default:
-          weatherIcon.src = "image/default-weather.png"; // Default icon
+          weatherIcon.src = "images/default-weather.png"; // Default icon
           document.body.style.backgroundImage = "url('image/default-background.jpg')";
           break;
       }
