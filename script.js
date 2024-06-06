@@ -25,31 +25,31 @@ async function checkWeather(city) {
       switch (data.weather[0].main) {
         case "Clouds":
           weatherIcon.src = "images/cloudy-weather.png";
-          document.body.style.backgroundImage = "url('images/cloudy-background.jpg')";
+          document.body.style.backgroundImage = "url('images/cloudy-bg.jpg')";
           break;
         case "Clear":
           weatherIcon.src = "images/clear-weather.png";
-          document.body.style.backgroundImage = "url('images/clear-background.jpg')";
+          document.body.style.backgroundImage = "url('images/clear-bg.jpg')";
           break;
         case "Rain":
           weatherIcon.src = "images/rainy-weather.png";
-          document.body.style.backgroundImage = "url('images/rainy-background.jpg')";
+          document.body.style.backgroundImage = "url('images/rainy-bg.jpg')";
           break;
         case "Drizzle":
           weatherIcon.src = "images/drizzle-weather.png";
-          document.body.style.backgroundImage = "url('images/drizzle-background.jpg')";
+          document.body.style.backgroundImage = "url('images/drizzle-bg.jpg')";
           break;
         case "Mist":
           weatherIcon.src = "images/mist-weather.png";
-          document.body.style.backgroundImage = "url('images/mist-background.jpg')";
+          document.body.style.backgroundImage = "url('images/mist-bg.jpg')";
           break;
         case "Dust":
           weatherIcon.src = "images/dust.png";
           document.body.style.backgroundImage = "url('images/dust-bg.jpg')";
           break;
         default:
-          weatherIcon.src = "images/default-weather.png"; // Default icon
-          document.body.style.backgroundImage = "url('image/default-background.jpg')";
+          weatherIcon.src = "images/clear-weather.png"; // Default icon
+          document.body.style.backgroundImage = "url('images/main-bg.jpg')";
           break;
       }
 
