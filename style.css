@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    color: #00008b;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url('image/main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(15px);
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.weather {
+    display: none;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.search input {
+    border: none;
+    font-size: 18px;
+    width: 80%;
+    outline: none;
+    color: #00008b;
+    padding: 10px 15px;
+    background-color: transparent;
+    text-transform:capitalize;
+    font-weight: 700;
+}
+
+.search input::placeholder {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #00008b;
+}
+
+.search button {
+    background-color: #00008b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button .fa-magnifying-glass {
+    font-size: 20px;
+    color: #fff;
+}
+
+.error p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    display: none;
+}
+
+.weather-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.status {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#status {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    width: 100%;
+}
+
+.col {
+    margin: 0 10px;
+}
+
+.city {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #fff;
+}
+
+.humidity-img, .wind-img {
+    height: 80px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid #00008b;
+}
+
+.humidity, .wind {
+    font-size: 24px;
+}
+
+p {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .search {
+        height: 50px;
+        padding: 8px 12px;
+    }
+
+    .search input {
+        font-size: 16px;
+    }
+
+    .weather-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        margin: 10px 0;
+    }
+
+    .city {
+        font-size: 22px;
+    }
+
+    .humidity-img, .wind-img {
+        height: 70px;
+    }
+
+    .humidity, .wind {
+        font-size: 22px;
+    }
+
+    .status {
+        font-size: 16px;
+    }
+
+    #status {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search {
+        height: 40px;
+        padding: 5px 10px;
+    }
+
+    .search input {
+        font-size: 14px;
+    }
+
+    .search button {
+        padding: 8px;
+    }
+
+    button .fa-magnifying-glass {
+        font-size: 16px;
+    }
+
+    .weather-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .city {
+        font-size: 20px;
+    }
+
+    .humidity-img, .wind-img {
+        height: 60px;
+    }
+
+    .humidity, .wind {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .status {
+        font-size: 14px;
+    }
+
+    #status {
+        font-size: 14px;
+    }
+
+    .details {
+        margin: 10px;
+    }
+}
